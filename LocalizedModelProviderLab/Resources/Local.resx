@@ -123,13 +123,31 @@
   <data name="ProductModel_Price" xml:space="preserve">
     <value>金額</value>
   </data>
+  <data name="ProductModel_Price_Range" xml:space="preserve">
+    <value>金額應介於 {0} ~ {1}</value>
+  </data>
   <data name="ProductModel_ProductId" xml:space="preserve">
     <value>產品編號</value>
   </data>
   <data name="ProductModel_ProductName" xml:space="preserve">
     <value>產品名稱</value>
   </data>
+  <data name="ProductModel_ProductName_Required" xml:space="preserve">
+    <value>產品名稱絕對不能為空值滴</value>
+  </data>
+  <data name="ProductModel_ProductName_StringLength" xml:space="preserve">
+    <value>產品名稱不能超過長度 {0}</value>
+  </data>
+  <data name="ProductModel_ProductName_StringLength_Min" xml:space="preserve">
+    <value>產品名稱不能超過長度 {0} ~ {1}</value>
+  </data>
   <data name="ProductModel_Qty" xml:space="preserve">
     <value>數量</value>
+  </data>
+  <data name="ProductModel_Qty_Old" xml:space="preserve">
+    <value>舊數量</value>
+  </data>
+  <data name="ProductModel_Qty_Old_Compare" xml:space="preserve">
+    <value>舊數量與數量差很多</value>
   </data>
 </root>

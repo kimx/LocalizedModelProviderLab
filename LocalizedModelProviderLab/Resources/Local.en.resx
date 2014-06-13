@@ -123,13 +123,31 @@
   <data name="ProductModel_Price" xml:space="preserve">
     <value>Price</value>
   </data>
+  <data name="ProductModel_Price_Range" xml:space="preserve">
+    <value>Price should be between {0} ~ {1}</value>
+  </data>
   <data name="ProductModel_ProductId" xml:space="preserve">
     <value>Produc Id</value>
   </data>
   <data name="ProductModel_ProductName" xml:space="preserve">
     <value>Product Name</value>
   </data>
+  <data name="ProductModel_ProductName_Required" xml:space="preserve">
+    <value>Product Name cannot be empty abosulty</value>
+  </data>
+  <data name="ProductModel_ProductName_StringLength" xml:space="preserve">
+    <value>Product Name String Length must {0} ~ {1}</value>
+  </data>
+  <data name="ProductModel_ProductName_StringLength_Min" xml:space="preserve">
+    <value>Product Name String Length cannot over {0}</value>
+  </data>
   <data name="ProductModel_Qty" xml:space="preserve">
     <value>Qty</value>
+  </data>
+  <data name="ProductModel_Qty_Old" xml:space="preserve">
+    <value>Qty very old</value>
+  </data>
+  <data name="ProductModel_Qty_Old_Compare" xml:space="preserve">
+    <value>QtyOld is very different from Qty</value>
   </data>
 </root>

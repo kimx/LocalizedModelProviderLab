@@ -1,6 +1,7 @@
 ﻿using LocalizedModelProviderLab.Resources;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
@@ -40,6 +41,9 @@ namespace LocalizedModelProviderLab
         {
             return System.Globalization.CultureInfo.CreateSpecificCulture(cultureName).DisplayName;
         }
+
+        public static ResourceStringProvider GlobalResourceStringProvider { get; set; }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -49,6 +53,12 @@ namespace LocalizedModelProviderLab
 
             ResourceStringProvider rp = new ResourceStringProvider(Local.ResourceManager);
             ModelMetadataProviders.Current = new LocalizedModelMetadataProvider(rp);
+            GlobalResourceStringProvider = rp;
+
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RequiredAttribute), typeof(LocalizedRequiredAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(StringLengthAttribute), typeof(LocalizedStringLengthAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(RangeAttribute), typeof(LocalizedRangeAttributeAdapter));
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(typeof(System.ComponentModel.DataAnnotations.CompareAttribute), typeof(LocalizedCompareAttributeAdapter));
 
         }
 

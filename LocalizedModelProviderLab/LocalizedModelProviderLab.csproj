@@ -123,6 +123,12 @@
     </Compile>
     <Compile Include="ILocalizedStringProvider.cs" />
     <Compile Include="LocalizedModelMetadataProvider.cs" />
+    <Compile Include="LocalizedValidator\LocalizedCompareAttributeAdapter.cs" />
+    <Compile Include="LocalizedValidator\LocalizedRangeAttributeAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalizedValidator\LocalizedRequiredAttributeAdapter.cs" />
+    <Compile Include="LocalizedValidator\LocalizedStringLengthAttributeAdapter.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceStringProvider.cs" />
@@ -211,7 +217,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>48051</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:48051/</IISUrl>
+          <IISUrl>http://localhost:48052/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

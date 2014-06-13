@@ -79,6 +79,15 @@ namespace LocalizedModelProviderLab.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 金額應介於 {0} ~ {1} 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_Price_Range {
+            get {
+                return ResourceManager.GetString("ProductModel_Price_Range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 產品編號 的當地語系化字串。
         /// </summary>
         public static string ProductModel_ProductId {
@@ -97,11 +106,56 @@ namespace LocalizedModelProviderLab.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 產品名稱絕對不能為空值滴 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_ProductName_Required {
+            get {
+                return ResourceManager.GetString("ProductModel_ProductName_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 產品名稱不能超過長度 {0} 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_ProductName_StringLength {
+            get {
+                return ResourceManager.GetString("ProductModel_ProductName_StringLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 產品名稱不能超過長度 {0} ~ {1} 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_ProductName_StringLength_Min {
+            get {
+                return ResourceManager.GetString("ProductModel_ProductName_StringLength_Min", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 數量 的當地語系化字串。
         /// </summary>
         public static string ProductModel_Qty {
             get {
                 return ResourceManager.GetString("ProductModel_Qty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 舊數量 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_Qty_Old {
+            get {
+                return ResourceManager.GetString("ProductModel_Qty_Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 舊數量與數量差很多 的當地語系化字串。
+        /// </summary>
+        public static string ProductModel_Qty_Old_Compare {
+            get {
+                return ResourceManager.GetString("ProductModel_Qty_Old_Compare", resourceCulture);
             }
         }
     }
